@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[tracelessspring]]></title>
+  <subtitle><![CDATA[you cannot see me ~]]></subtitle>
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://tracelessspring.com/"/>
+  <updated>2015-11-22T03:18:21.867Z</updated>
+  <id>http://tracelessspring.com/</id>
+  
+  <author>
+    <name><![CDATA[ChunLi]]></name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[时间测试函数time]]></title>
+    <link href="http://tracelessspring.com/2015/11/22/%E6%97%B6%E9%97%B4%E6%B5%8B%E8%AF%95%E5%87%BD%E6%95%B0time/"/>
+    <id>http://tracelessspring.com/2015/11/22/时间测试函数time/</id>
+    <published>2015-11-22T03:13:07.000Z</published>
+    <updated>2015-11-22T03:18:21.867Z</updated>
+    <content type="html"><![CDATA[<p>例：<a id="more"></a><br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span><span class="string">&lt;time.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">	<span class="keyword">double</span> sum = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">time_t</span> start, stop;     <span class="comment">//注意类型为time_t</span></span><br><span class="line">	time(&amp;start);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= <span class="number">100000000</span>; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		sum += <span class="number">1.0</span> / i;</span><br><span class="line">	&#125;</span><br><span class="line">	time(&amp;stop);</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; <span class="string">"runTime is "</span> &lt;&lt; stop - start &lt;&lt; endl;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>输出结果为:</p>
+<blockquote>
+<p>runTime is 1</p>
+</blockquote>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>例：]]>
+    
+    </summary>
+    
+      <category term="c++" scheme="http://tracelessspring.com/tags/c/"/>
+    
+      <category term="数据结构" scheme="http://tracelessspring.com/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="c++" scheme="http://tracelessspring.com/categories/c/"/>
+    
+      <category term="数据结构" scheme="http://tracelessspring.com/categories/c/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[简明markdown教程]]></title>
+    <link href="http://tracelessspring.com/2015/10/21/%E7%AE%80%E6%98%8Emarkdown%E6%95%99%E7%A8%8B/"/>
+    <id>http://tracelessspring.com/2015/10/21/简明markdown教程/</id>
+    <published>2015-10-21T11:58:10.000Z</published>
+    <updated>2015-10-23T07:29:18.992Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xnoq7.com1.z0.glb.clouddn.com/test_12beedf93fafa2043f8acabb0a97374e5.jpg" alt=""><br><a href="http://www.jianshu.com/" target="_blank" rel="external">简书</a>作为一款「写作软件」在诞生之初就支持了 Markdown，Markdown 是一种「电子邮件」风格的「标记语言」<a id="more"></a>，我们强烈推荐所有写作者学习和掌握该语言。为什么？可以参考:<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">10</span>;i++)</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;i;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h4 id="标题">标题</h4><h4 id="列表">列表</h4><h4 id="链接和图片">链接和图片</h4><h4 id="引用">引用</h4><blockquote>
+<p>这里加上别人的文字表示引用</p>
+</blockquote>
+<h4 id="表格">表格</h4><table>
+<thead>
+<tr>
+<th style="text-align:center">dog</th>
+<th style="text-align:center">bird</th>
+<th style="text-align:center">cat</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">foo</td>
+<td style="text-align:center">foo</td>
+<td style="text-align:center">foo</td>
+</tr>
+<tr>
+<td style="text-align:center">bar</td>
+<td style="text-align:center">bar</td>
+<td style="text-align:center">bar</td>
+</tr>
+<tr>
+<td style="text-align:center">baz</td>
+<td style="text-align:center">baz</td>
+<td style="text-align:center">baz</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xnoq7.com1.z0.glb.clouddn.com/test_12beedf93fafa2043f8acabb0a97374e5.jpg" alt=""><br><a href="http://www.jianshu.com/">简书</a>作为一款「写作软件」在诞生之初就支持了 Markdown，Markdown 是一种「电子邮件」风格的「标记语言」]]>
+    
+    </summary>
+    
+  </entry>
+  
+</feed>
